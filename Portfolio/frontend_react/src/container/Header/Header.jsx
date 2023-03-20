@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+
 // import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
 import './Header.scss';
@@ -27,7 +28,7 @@ const Header = () => (
           <span>👋</span>
           <div style={{ marginLeft: 20 }}>
             <p className="p-text">Hello, I am</p>
-            <h1 className="head-text">Ghulam Dastgir</h1>
+            <h1 className="head-text">Micael</h1>
           </div>
         </div>
 
@@ -67,4 +68,5 @@ const Header = () => (
   </div>
 );
 
-export default Header
+//here we pass complete component to wraper with id home 
+export default AppWrap(Header, 'home');
